@@ -18,7 +18,7 @@ function App() {
     friend: '"She won\'t be coming with us. She has to go play touch rugby"',
     dad: '"Find a husband!"',
     gemini: '"You are fit, strong, and smart!"',
-    landlord: '"oh you are going to gym now?"'
+    landlord: '"I guess you are going to the gym now?"'
   };
 
   const handleMouseEnter = (key) => {
@@ -58,7 +58,7 @@ function App() {
           {/* 照片展示区：整张图放大显示 */}
           <div style={{ marginBottom: '30px' }}>
             <img 
-              src="/profile1.jpg" 
+              src="/profile2.jpg" 
               alt="Profile" 
               style={{ 
                 width: '100%', 
@@ -93,6 +93,13 @@ function App() {
               style={{ width: '100%', maxWidth: '400px', padding: '14px 20px', background: '#1e293b', color: '#fbbf24', border: '2px solid #fbbf24', borderRadius: '12px', fontSize: '1.1rem', fontWeight: 'bold', cursor: 'pointer' }}
             >
               comments about me
+            </button>
+
+            <button 
+              onClick={() => setCurrentTab('lifestyle')}
+              style={{ width: '100%', maxWidth: '400px', padding: '14px 20px', background: '#1e293b', color: '#a855f7', border: '2px solid #a855f7', borderRadius: '12px', fontSize: '1.1rem', fontWeight: 'bold', cursor: 'pointer' }}
+            >
+              My Active Life
             </button>
 
             <button 
@@ -203,6 +210,33 @@ function App() {
             <p style={{ color: '#cbd5e1' }}>Stone project focused on safety monitoring systems.</p>
           </div>
           <div style={{ textAlign: 'center' }}>
+            <button onClick={() => setCurrentTab('home')} style={{ padding: '10px 20px', background: '#334155', color: '#f8fafc', border: 'none', borderRadius: '8px', cursor: 'pointer' }}>
+              ← Back to Home
+            </button>
+          </div>
+        </div>
+      )}
+{/* ---------------- 子页面：Lifestyle ---------------- */}
+      {currentTab === 'lifestyle' && (
+        <div>
+          <h1 style={{ color: '#a855f7', marginBottom: '20px' }}>🏋️‍♀️ My Active Life</h1>
+          <p style={{ color: '#94a3b8', marginBottom: '30px' }}>
+            Work hard, train harder! Here are some moments from the gym and touch rugby field.
+          </p>
+
+          {/* 照片排版区：上下排列 */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center', marginBottom: '40px' }}>
+            
+            <img src="/gym1.jpg" alt="Gym Training" style={{ width: '100%', maxWidth: '500px', borderRadius: '16px', border: '2px solid #a855f7' }} />
+            <img src="/gym2.jpg" alt="Gym Training" style={{ width: '100%', maxWidth: '500px', borderRadius: '16px', border: '2px solid #a855f7' }} />
+            
+            <img src="/rugby1.jpg" alt="Touch Rugby" style={{ width: '100%', maxWidth: '500px', borderRadius: '16px', border: '2px solid #a855f7' }} />
+            
+            {/* 如果有更多照片，可以直接在下面继续复制 <img /> 标签 */}
+
+          </div>
+
+          <div>
             <button onClick={() => setCurrentTab('home')} style={{ padding: '10px 20px', background: '#334155', color: '#f8fafc', border: 'none', borderRadius: '8px', cursor: 'pointer' }}>
               ← Back to Home
             </button>
