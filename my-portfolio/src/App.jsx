@@ -58,7 +58,7 @@ function App() {
           {/* 照片展示区：整张图放大显示 */}
           <div style={{ marginBottom: '30px' }}>
             <img 
-              src="/profile1.jpg" 
+              src="/profile2.jpg" 
               alt="Profile" 
               style={{ 
                 width: '100%', 
