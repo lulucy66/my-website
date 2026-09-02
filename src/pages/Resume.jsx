@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <div className="page page-resume">
       <div className="resume-header">
-        <h1>📄 Lucy (Silu) Huang</h1>
+        <h1>📄 Lucy Huang</h1>
         <p className="contact-line">
           📍 Auckland, New Zealand &nbsp;|&nbsp; 📧{' '}
           <a href="mailto:lulucy99@foxmail.com">lulucy99@foxmail.com</a> &nbsp;|&nbsp; 📞{' '}
